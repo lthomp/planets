@@ -1,2 +1,11 @@
 # don't track the XML files in data
-data/
+#data/
+# don't track the .dat files in data
+#data/*.dat
+# I only want to track b.dat in data
+# the ! means except and must immediately follow the line it is excpting
+# data/*.dat
+# !b.dat
+# this one tracks b.dat anywhere, but no other .dat files anywhere
+*.dat
+!b.dat
